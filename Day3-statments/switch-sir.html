@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+   const person = prompt("enter the age");
+   let cato = 0;
+   if(person>=1 && person<=15)
+   {
+    cato =1;
+   }
+   else if(person >=16 && person<=30 ){
+    cato=2
+   }
+   else if(person >= 31 && person<=40)
+   {
+    cato =3
+   }
+   else {
+    cato = 22222;
+   }
+   switch (cato) {
+    case 1:
+        document.write("child");
+        break;
+    case 2:
+    document.write("adult")
+    break;
+    case 3:
+    document.write("aged")
+    break;
+    default:
+        document.write("wrong age input")
+        break;
+   }
+</script>
+</html>

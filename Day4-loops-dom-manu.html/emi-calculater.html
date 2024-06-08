@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    let rangeAmt = Number(prompt("1. From 0 - 150000.\n2. From 150000 - 750000.\n3. From 750000 - 2500000.\n4. From 2500000 - 7500000.\n 5. 7500000 and above."));
+    let p, r, me, ai, ti;
+    switch (rangeAmt) {
+        case 1:
+            let p = Number(prompt("Enter Amount"));
+            if (p <= 150000) {
+                let r = 0.07;
+                ai = p * r;
+                ti = p + ai;
+                let yr = prompt("Enter years for EMI?");
+                me = ti / (12 * yr);
+                alert("total amount: " + ti + "\nmonthly emi:" + me);
+            } else {
+                alert("Please Enter amount from 0 - 150000")
+            }
+            break;
+        case 2:
+            p = Number(prompt("Enter Amount"));
+            if (p > 150001 && p <= 750000) {
+                r = 0.07;
+                ai = p * r;
+                ti = p + ai;
+                me = ti / (12 * yr);
+                alert("total amount: " + ti + "\nmonthly emi:" + me);
+            } else {
+                alert("Please Enter amount from 0 - 150000")
+            }
+            break;
+        case 3:
+            p = Number(prompt("Enter Amount"));
+            if (p <= 750001 && p <= 2500000) {
+                r = 0.07;
+                ai = p * r;
+                ti = p + ai;
+                me = ti / (12 * yr);
+                alert("total amount: " + ti + "\nmonthly emi:" + me);
+            } else {
+                alert("Please Enter amount from 0 - 150000")
+            }
+            break;
+        case 4:
+            p = Number(prompt("Enter Amount"));
+            if (p <= 2500001 && p <= 7500000) {
+                r = 0.07;
+                ai = p * r;
+                ti = p + ai;
+                me = ti / (12 * yr);
+                alert("total amount: " + ti + "\nmonthly emi:" + me);
+            } else {
+                alert("Please Enter amount from 0 - 150000")
+            }
+            break;
+        case 5:
+            p = Number(prompt("Enter Amount"));
+            if (p >= 7500001 ) {
+                r = 0.07;
+                ai = p * r;
+                ti = p + ai;
+                me = ti / (12 * yr);
+                alert("total amount: " + ti + "\nmonthly emi:" + me);
+            } else {
+                alert("Please Enter amount from 0 - 150000")
+            }
+            break;
+        default:
+            alert("Invalid Input!")
+            break;
+    }
+</script>
+
+</html>

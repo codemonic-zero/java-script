@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    const budget = prompt("Enter you buget");
+    let car;
+    if(budget <= 1500000){
+        car = 1;
+    }else if(budget > 1500000 && budget <= 2000000){
+        car = 2;
+    }else if(budget > 2000000 && budget <= 4000000){
+        car = 3;
+    }else if(budget > 4000000 && budget <= 8000000){
+        car = 4;
+    }else if(budget > 8000000){
+        car = 5;
+    }
+    switch(car){
+        case 1:
+            alert("Budget Cars");
+        break;
+        case 2:
+            alert("Mid - Range Cars");
+        break;
+        case 3:
+            alert("High - Budget Cars");
+        break;
+        case 4:
+            alert("Premium Cars");
+        break;
+        case 5:
+            alert("Luxery Cars");
+        break;
+        default:
+            alert("wrong input");
+        break;
+    }
+</script>
+<body>
+    
+</body>
+</html>
