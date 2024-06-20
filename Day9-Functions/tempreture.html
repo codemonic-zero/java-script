@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="he"></p>
+    <!-- <button onclick="caladF()">degree Ferenheit</button> -->
+    <button onclick="calldC()">degree Celcius</button>
+</body>
+<script>
+     let dC,dF;
+    dF=prompt("Enter Temp in degree ferenheit:");
+
+    // function calculate() {
+    //     dF = (dC * 9/5) + 32;
+    //     document.write(dF+" degree Ferenheit");
+    //     // dF =document.getElementById('he').innerHTML ;
+    // }
+
+    function calldC() {
+        dC = (dF - 32) * 5/9;
+        document.write(dC+" degree Celcius");
+        // dF =document.getElementById('he').innerHTML ;
+    }
+</script>
+</html>

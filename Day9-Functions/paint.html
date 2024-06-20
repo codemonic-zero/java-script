@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let roomNumber,requiredPaint,rppl;
+    const wallNumber = 5;
+    const wallSize = 12;
+    const ppl = 6;
+    roomNumber  = Number(prompt("Enter Number of Rooms: "));
+    function totalPaint() {
+        requiredPaint = (roomNumber * wallNumber) * wallSize;
+        rppl = requiredPaint / ppl;
+        alert("Total Paint Required is: "+rppl+" litre")
+    }
+    totalPaint();
+    // alert("Total Paint Required is: "+totalPaint());
+</script>
+</html>

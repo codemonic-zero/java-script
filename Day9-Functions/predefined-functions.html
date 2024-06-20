@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="rolenumber()">role</button>
+    <p id="rol"></p>
+</body>
+<script>
+    let no = 42.754;
+    //return next value if greater then 0.5 otherwise return current value rounfigured
+    document.write("Round: "+Math.round(no));
+    // //return next value roundfigured
+    document.write("<br>Ceil: "+Math.ceil(no));
+    // //return current value roundfigured
+    document.write("<br>Floor: "+Math.floor(no));
+    // //return's power of the base value
+    document.write("<br>Power: "+Math.pow(3,3));
+    // //return's sqrt of the base value
+    document.write("<br>Power: "+Math.sqrt(225));
+    // //return's absolute of the base value
+    document.write("<br>Absolute: "+Math.abs(-25));
+    // //return's Minimum of the base value
+    document.write("<br>Minimum: "+Math.min(12,25,45,55,8,44,68,55,9));
+    // //return's Maximum of the base value
+    document.write("<br>Maximum: "+Math.max(12,25,45,55,8,44,68,55,9));
+    // //return's Random of the base value
+    document.write("<br>Random: "+Math.random()*100);
+    //How the dice logic work example
+    document.write("<br>Dice Rotate: "+Math.floor(Math.random()*6+1));
+    //How the dice logic work example
+    function rolenumber() {
+        let dice = Math.ceil(Math.random()*6);
+        return document.getElementById('rol').innerHTML = dice;
+    }
+    document.write("<br>Dice Rotate: "+Math.ceil(Math.random()*6));
+
+</script>
+</html>
